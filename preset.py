@@ -29,12 +29,6 @@ def encoding_detect():
         print('Please change your system default encoding to support "UTF-8"')
 
 
-def reset(t1ext_buffer, t2ext_colour, t3ext_back):
-    t1ext_buffer = 'Blue-Yellow'
-    t2ext_colour = 'blue'
-    t3ext_back = 'on_yellow'
-
-
 if __name__ == '__main__':
     print(platform.system())
     print(sys.getdefaultencoding())

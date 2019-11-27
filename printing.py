@@ -1,4 +1,3 @@
-from judgement import *
 from preset import *
 from termcolor import *
 import os

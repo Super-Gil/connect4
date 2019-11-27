@@ -24,14 +24,12 @@ class Judge:
         except IndexError:
             return False
 
-    # lFlag means local global flag!
     def main_judge(self, x_loc, y_loc):
         # Horizontal ->
         if self.user == 1:
             self.user = 2
         else:
             self.user = 1
-        lFlag = False
         for i in range(1, 4):
             self.counter = i
             if self.simplify(y_loc, x_loc, y_loc, x_loc + i):
@@ -64,9 +62,10 @@ class Judge:
             if self.simplify(y_loc, x_loc, y_loc - i, x_loc + i):
                 pass
             else:
-                self.counter -= 1
+                i -= 1
                 for j in range(1, 4 - i):
-                    if self.simplify(y_loc, x_loc, y_loc + i, x_loc - i):
+                    self.counter = i+j
+                    if self.simplify(y_loc, x_loc, y_loc + j, x_loc - j):
                         pass
                     else:
                         break
@@ -80,10 +79,10 @@ class Judge:
             if self.simplify(y_loc, x_loc, y_loc + i, x_loc + i):
                 pass
             else:
-                self.counter -= 1
+                i -= 1
                 for j in range(1, 4 - i):
                     self.counter = i+j
-                    if self.simplify(y_loc, x_loc, y_loc - i, x_loc - i):
+                    if self.simplify(y_loc, x_loc, y_loc - j, x_loc - j):
                         pass
                     else:
                         break

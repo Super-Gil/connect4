@@ -1,9 +1,27 @@
 '''
 Time: 11/11/2019 6:00 ETC+8
-OS: Windows10 Enterprise 64 bit
-NOTE: COPYRIGHT© BAO NING
-Once you are reading or running the code you acknowledge that you admit the 'MIT license' used for this python script
-For more info about the MIT license, visit www.github.com
+MIT License
+
+Copyright (c) [2019] [Bao Ning]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 Pay attention:
 the layout of my game board is
     1   2   3   4   5   6   7
@@ -15,7 +33,6 @@ the layout of my game board is
 6
 key: array[y][x]
 '''
-from preset import *
 from printing import *
 from dashboard import *
 from judgement import *
@@ -50,4 +67,5 @@ def main():
 
 
 if __name__ == '__main__':
+    encoding_detect()
     main()
